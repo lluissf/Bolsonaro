@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #1e1e1e, #3a3a3a);
+    color: #ccc;
+    overflow: hidden;
+  }
+  
+  .background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .glow-text {
+    font-size: 3rem;
+    color: #999;
+    text-shadow: 0 0 10px #444;
+    animation: slowPulse 4s infinite;
+  }
+  
+  .subtext {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #bbb;
+    animation: fadeInUp 3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slowPulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+  }
+  
+  .confetti {
+    display: none; /* Sem comemoração */
+  }
+  
+  .spinner {
+    font-size: 2rem;
+    margin-top: 40px;
+    color: #555;
+    animation: slowSpin 10s linear infinite;
+  }
+  
+  @keyframes slowSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .fireworks .rocket {
+    display: none; /* Sem fogos */
+  }
+  
